@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>
+I have no idea what I'm doing
+</title>
+</head>
+<body onload="main()">
+
+
+<canvas id="gl" width="400" height="400" >
+I really don't
+</canvas>
+<br />
+<input type="radio" name="btn" id="half" onchange="setScale(0.5)">0.5</input>
+<input type="radio" name="btn" id="one" checked="checked" onchange="setScale(1)">1</input>
+<input type="radio" name="btn" id="onenahalf" onchange="setScale(1.5)">1.5</input>
+<input type="radio" name="btn" id="two" onchange="setScale(2)">2</input>
+<br />
+<input id="rot" type="range" max="45" min ="5" step="1" value="30" onchange="updateRotate()"></input>
+<span id="ra">30</span>
+<br />
+<button type="button" id="stop" onclick="toggle('off')">Stop</button>
+<button type="button" id="start" onclick="toggle('on')">Start</button>
+<button type="button" id="reset" onclick="refresh()">Restart</button>
+
+<p>
+	Press:<br />
+	'b' for blue<br />
+	'r' for red<br />
+	'g' for green<br />
+	'a' for gold<br />
+	'o' for orange<br />
+	pageup for faster<br />
+	pagedown for what?<br />
+	
+</p>
+
+<script src="../lib/webgl-utils.js"></script>
+<script src="../lib/webgl-debug.js"></script>
+<script src="../lib/cuon-utils.js"></script>
+<script src="../lib/cuon-matrix.js"></script>
+<script src="components.js"></script>
+</body>
+</html>
