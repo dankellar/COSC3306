@@ -123,6 +123,7 @@ function rekit()
 function subData()
 {
 	var s = v.length;
+	console.log("s: " + s);
 	var f = v.BYTES_PER_ELEMENT;
 	gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
 	gl.bufferSubData(gl.ARRAY_BUFFER, 0, new Float32Array(v));
